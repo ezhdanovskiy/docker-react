@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - dovker build -t zhdanovskiy/docker-react -f Dockerfile.dev .
+  - docker build -t zhdanovskiy/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -t zhdanovsky/docker-react npm run test -- --coverage
