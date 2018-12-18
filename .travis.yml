@@ -6,4 +6,4 @@ before_install:
   - docker build -t zhdanovskiy/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run zhdanovsky/docker-react npm run test -- --coverage
+  - docker run zhdanovskiy/docker-react npm run test -- --coverage
